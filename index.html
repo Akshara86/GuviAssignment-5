@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Say <span style="color: rgb(89, 179, 89);">Hello !</span></h2>
+        <p>Feel free to stop by and say hi !</p>
+
+        <form onsubmit="handleFormSubmit(event)">
+            <img src="photo.jpg" width="100px"/>
+            
+            <label for="name">Name <span class="required">*</span></label><br>
+            <input type="text" id="name"/><br>
+
+            <label for="mail">E-mail <span class="required">*</span></label><br>
+            <input type="text" id="mail"/><br>
+
+            <label for="phn">Contact Number</label><br>
+            <input type="number" id="phn"/><br>
+
+            <label for="subject">Subject</label><br>
+            <input type="text" id="subject"/><br>
+
+
+            <label for="message">Message <span class="required">*</span></label><br>
+            <textarea name="" id="message" rows="6" cols=""></textarea><br>
+
+            <button type="submit" style="color: white;background-color:rgb(89, 179, 89) ;">Send</button>    
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
